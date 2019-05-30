@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="container">
+    <i>Use case for HATEOAS</i>
+    <ul>
+      <h3>Users</h3>
+      {{#each model.users as |user|}}
+        <li>{{user.name}}</li>
+      {{/each}}
+    </ul>
+  </div>
+  <div class="container">
+    <i>Use case for dynamic fetching</i>
+    <ul>
+      <h3>Configurations</h3>
+      {{#each model.configurations as |configuration|}}
+        <li>{{configuration.name}}</li>
+      {{/each}}
+    </ul>
+  </div>
+</div>
