@@ -1,0 +1,9 @@
+{{!-- value changed --}}
+{{!-- value saving --}}
+{{!-- value saved --}}
+{{#each status as |state|}}
+  <div class="save--status {{state.class}}">
+    {{!-- <img src={{state.image}} alt={{state.value}} class="image--icon">{{state.value}} --}}
+    {{state.value}}
+  </div>
+{{/each}}

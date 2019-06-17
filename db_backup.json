@@ -1,16 +1,17 @@
 {
-  "systems": [
-    {
+  "systems": [{
       "name": "System 1",
       "relationName": "user",
       "configurations": [
         "mouseConfiguration",
         "keyboardConfiguration",
         "display",
-        "srAm2yO",
         "4U9UDwv"
       ],
-      "id": 1
+      "id": 1,
+      "links": {
+        "users": "users"
+      }
     },
     {
       "id": 2,
@@ -24,8 +25,7 @@
       }
     }
   ],
-  "users": [
-    {
+  "users": [{
       "id": "shelton",
       "name": "Shelton",
       "systemId": 1
@@ -41,8 +41,7 @@
       "systemId": 2
     }
   ],
-  "configurations": [
-    {
+  "configurations": [{
       "name": "Mouse",
       "configData": "leftButton:leftClick,rightButton:rightClick,middleButton:scroll",
       "deviceId": 1000,
@@ -65,11 +64,6 @@
       "name": "New User",
       "deviceId": 0,
       "configData": "sldkfjsflkjdskjfkj;aklfjflkjfdklasj"
-    },
-    {
-      "name": "Pen Touch",
-      "configData": "topButton:leftClick,bottomButton:rightClick",
-      "id": "srAm2yO"
     },
     {
       "name": "Touch Pad",

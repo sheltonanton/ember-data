@@ -3,6 +3,7 @@
     <i>Use case for HATEOAS</i>
     <ul>
       <h3>Users</h3>
+      {{!-- task:3 --}}
       {{#each model.users as |user|}}
         <li>{{input value=user.name}}</li>
       {{/each}}
@@ -10,14 +11,58 @@
     <button {{action "saveAll" model}}>Save</button>
   </div>
   <div class="container">
-    <i>Use case for dynamic fetching</i>
+    <i>Use case for dynamic fetching, save one and save all relations, deleting and editing relations</i>
     <ul>
       <h3>Configurations</h3>
-      {{#each model.configurations as |configuration|}}
-        <li>{{configuration.name}}: {{input value=configuration.configData}}&nbsp;<button {{action "saveConfiguration" configuration}}>Save Configuration</button></li>
-      {{/each}}
+      <table class="container--table">
+        <tbody>
+          {{#each model.configurations as |configuration|}}
+            <tr>
+              {{!-- row display or edit control --}}
+              {{#if configuration.edit}}
+                <td>{{input value=configuration.name}}</td><td>{{input value=configuration.configData}}</td>
+              {{else}}
+                <td>{{configuration.name}}</td><td>{{configuration.configData}}</td>
+              {{/if}}
+              {{!-- remove configuration --}}
+              <td class="container--table--icon-cell">
+                {{#if configuration.edit}}
+                  <button {{action "cancelConfiguration" configuration}}>
+                    <img src="/assets/images/cancel.png" class="image--icon" alt="Cancel Configuration">
+                  </button>
+                {{else}}
+                  <button {{action "removeConfiguration" model configuration}}>
+                    <img src="/assets/images/delete.png" class="image--icon" alt="Remove Configuration">
+                  </button>
+                {{/if}}
+              </td>
+              {{!-- edit or save --}}
+              {{#if configuration.edit}}
+                <td class="container--table--icon-cell">
+                  <button {{action "saveConfiguration" configuration}}>
+                    <img src="/assets/images/save.png" class="image--icon" alt="Save Configuration">
+                  </button>
+                </td>
+              {{else}}
+                <td class="container--table--icon-cell">
+                  <button {{action "editConfiguration" configuration}}>
+                    <img src="/assets/images/edit.png" class="image--icon" alt="Edit Configuration">
+                  </button>
+                </td>
+              {{/if}}
+              <td class="noborder">
+                {{save-status model=configuration}}
+              </td>
+            </tr>
+          {{/each}}
+          <tr>
+            <td class="noborder"><button {{action "addConfiguration" model}}>Add Configuration</button></td>
+          </tr>
+        </tbody>
+      </table>
     </ul>
     <button {{action "saveAll" model}}>Save All</button>
+    {{save-status model=model}}
   </div>
   <div class="container">
     <i>Use case for file upload</i>

@@ -1,0 +1,47 @@
+.container--table {
+    
+}
+    .container--table input {
+        width: 90%;
+    }
+
+    .container--table td {
+        width: 400px;
+        padding: 4px;
+        border: 1px solid #ddd;
+    }
+    .container--table td.container--table--icon-cell {
+        width: 20px;
+    }
+.image--icon {
+    width: 20px;
+    height: 20px;
+}
+
+.save--status {
+    display: inline-block;
+    visibility: hidden;
+    width: 120px;
+    padding: 2px;
+    color: white;
+}
+.save--status.edited{
+    visibility: inherit;
+    background-color: rgb(250, 108, 108);
+    border: 1px solid rgb(147, 51, 51);
+}
+.save--status.saving {
+  visibility: inherit;
+  background-color: #ddd;
+  border: 1px solid #ddd;
+}
+.save--status.saved {
+  visibility: inherit;
+  background-color: rgb(41, 108, 67);
+  border: 1px solid rgb(11, 76, 43);
+}
+
+/* helper css */
+td.noborder {
+    border: none;
+}
