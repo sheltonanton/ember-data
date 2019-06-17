@@ -1,1 +1,3 @@
-{{systems-dashboard model = model}}
+{{#each model as |system|}}
+  {{systems-dashboard model = system}}
+{{/each}}
