@@ -1,0 +1,33 @@
+{
+  "pendingTasks": [{
+    "id": "1",
+    "title": "Rollback Attributes",
+    "tasks": [1]
+  }, {
+    "id": "2",
+    "title": "Embedded Record Mixin",
+    "tasks": [2]
+  }],
+  "completedTasks": [{
+    "id": "3",
+    "title": "HATEOAS",
+    "tasks": [3]
+  }],
+  "tasks": [{
+    "id": 1,
+    "description": "Find out whether the attributes of the parent and related model could be rolled back when the request got failed for {serialize: 'record'}",
+    "priority": 0
+  }, {
+    "id": 2,
+    "description": "Clarify all the options in EmbeddedRecordMixin",
+    "priority": 0
+  }, {
+    "id": 3,
+    "description": "Getting the data from server using HATEOAS concept",
+    "priority": 0
+  }, {
+    "id": 4,
+    "description": "Serializer use cases and the different values to be used",
+    "priority": 0
+  }]
+}
