@@ -35,21 +35,21 @@
     "id": "mouseConfiguration",
     "name": "Mouse configuration",
     "deviceId": 1000,
-    "data": "slfkj3nslfjl3asdabal1209128710abc243"
+    "configData": "slfkj3nslfjl3asdabal1209128710abc243"
   }, {
     "id": "keyboardConfiguration",
     "name": "Keyboard configuration",
     "deviceId": 1001,
-    "data": "ds12342h124lkl1n31l313l1l23j1l3kj13"
+    "configData": "ds12342h124lkl1n31l313l1l23j1l3kj13"
   }, {
     "id": "display",
     "name": "Display",
     "deviceId": 2000,
-    "data": "sslksdflkjl234l234j23l424lkj23dghss"
+    "configData": "sslksdflkjl234l234j23l424lkj23dghss"
   }, {
     "id": "userConfiguration",
     "name": "New User",
     "deviceId": 0,
-    "data": "sldkfjsflkjdskjfkj;aklfjflkjfdklasj"
+    "configData": "sldkfjsflkjdskjfkj;aklfjflkjfdklasj"
   }]
 }
