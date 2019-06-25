@@ -19,9 +19,9 @@ export default Component.extend({
                 model.save();
             });
         },
-        addConfiguration: function(system){
+        addConfiguration: function(configurations){
             //creating a new record and assigning pushing it to array
-            let record = system.store.createRecord("configuration", {
+            let record = configurations.createRecord({
                 name: '',
                 configData: '',
                 edit: true

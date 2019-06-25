@@ -45,3 +45,54 @@
 td.noborder {
     border: none;
 }
+/* demo component*/
+.hide {
+    display: none;
+}
+.demo-component--container{
+    display: inline-block;
+    width: 600px;
+    border: 1px solid #aaa;
+    border-radius: 2px;
+}
+
+.custom-search-bar--token{
+    display: inline-block;
+    border: 1px solid #ddd;
+    border-radius: 1px;
+    padding: 2px;
+    margin: 2px;
+}
+.custom-search-bar--input, .custom-search-bar--input:focus,.custom-search-bar--input:focus-within {
+    border: none !important;
+    width: auto;
+    outline: none;
+}
+
+    .custom-search-bar--token__category {
+        padding: 2px;
+    }
+    .custom-search-bar--token__category::after {
+        content: " |"
+    }
+    .custom-search-bar--token__input {
+        
+    }
+    .custom-search-bar--menu {
+        border: 1px solid #aaa;
+        box-shadow: 0px 0px 10px #ddd;
+    }
+/* custom search */
+.custom-search--token {
+    border: 1px solid #ddd;
+    background-color: #eee;
+    color: #888;
+    padding: 4px;
+    display: inline-block;
+}
+
+.custom-search--token .token--input {
+    width: inherit;
+    margin: 0px;
+    padding: 0px;
+}
