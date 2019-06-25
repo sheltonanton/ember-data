@@ -48,6 +48,11 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 Specify what it takes to deploy your app.
 
+### Using JSON Server
+
+* `json-server --watch db.json`
+* `json-server --watch db.json --middlewares middleware.js` (if control over the request and response are needed)
+
 ## Further Reading / Useful Links
 
 * [ember.js](https://emberjs.com/)
